@@ -42,9 +42,94 @@
   }
 }
 
+# my configs Eslint-react-with-typescript 
+
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "react-refresh"],
+  "rules": {
+    "react-refresh/only-export-components": "warn",
+    "quotes": ["error", "single"],
+    "arrow-body-style": ["error", "always"],
+    "eqeqeq": ["error", "always"],
+    "curly": ["error"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-empty-pattern": "error",
+    "object-curly-spacing": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn"
+  }
+}
+
+# my configs Eslint-react-js
+
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "arrow-body-style": ["error", "always"],
+    "eqeqeq": ["error", "always"],
+    "curly": ["error"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-empty-pattern": "error",
+    "object-curly-spacing": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn"
+  }
+}
+
 # my configs settings.json
 
 {
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   // Workbench
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
@@ -58,7 +143,8 @@
   "editor.tabSize": 2,
   // editor action on save
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
   },
   // Explorer
   "explorer.compactFolders": false,
@@ -68,14 +154,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "window.zoomLevel": 1,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#5caeef",
-    "editorBracketHighlight.foreground2": "#dfb976",
-    "editorBracketHighlight.foreground3": "#c172d9",
+    "editorBracketHighlight.foreground1": "#c661f5",
+    "editorBracketHighlight.foreground2": "#33b8f2",
+    "editorBracketHighlight.foreground3": "#54e4a6",
     "editorBracketHighlight.foreground4": "#4fb1bc",
     "editorBracketHighlight.foreground5": "#97c26c",
-    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.foreground6": "#dfb976",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
-  }
+  },
+  "editor.codeLensFontSize": 1,
+  "window.zoomLevel": 1,
+  "editor.fontWeight": "500"
 }
