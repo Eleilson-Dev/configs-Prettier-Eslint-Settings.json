@@ -172,17 +172,17 @@
 
 =============================================================================================================================
 
-[ passo a passo pra usar o eslint o prittier com typescript puro
+# passo a passo pra usar o eslint o prittier com typescript puro
 
 primeiro passo => {  install npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript  }
 
-segundo passo installar o prettier/eslint com as config => {
+# segundo passo installar o prettier/eslint com as config => {
 	npm install prettier --save-dev
 	npm install eslint-plugin-prettier --save-dev
 	npm install eslint-config-prettier --save-dev
 }
 
-config eslint para typescript com prettier em js //
+# config eslint para typescript com prettier em js //
 
 module.exports = {
   env: {
@@ -210,7 +210,7 @@ module.exports = {
 };
 
 
-prettier config em js // 
+# prettier config em js // 
 
 module.exports = {
   semi: true,
@@ -220,4 +220,4 @@ module.exports = {
   tabWidth: 2,
 };
 
-]
+
