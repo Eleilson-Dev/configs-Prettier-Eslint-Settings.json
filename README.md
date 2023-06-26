@@ -169,3 +169,55 @@
   "window.zoomLevel": 1,
   "editor.fontWeight": "500"
 }
+
+=============================================================================================================================
+
+[ passo a passo pra usar o eslint o prittier com typescript puro
+
+primeiro passo => {  install npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript  }
+
+segundo passo installar o prettier/eslint com as config => {
+	npm install prettier --save-dev
+	npm install eslint-plugin-prettier --save-dev
+	npm install eslint-config-prettier --save-dev
+}
+
+config eslint para typescript com prettier em js //
+
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 11,
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint'],
+  rules: {},
+};
+
+
+prettier config em js // 
+
+module.exports = {
+  semi: true,
+  trailingComma: 'all',
+  singleQuote: true,
+  printWidth: 80,
+  tabWidth: 2,
+};
+
+]
