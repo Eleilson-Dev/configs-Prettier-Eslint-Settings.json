@@ -128,7 +128,6 @@
 # my configs settings.json
 
 {
-  {
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   // Workbench
@@ -169,27 +168,7 @@
   "editor.codeLensFontSize": 1,
   "window.zoomLevel": 1,
   "editor.fontWeight": "500",
-  "terminal.integrated.env.linux": {},
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "comment",
-          "keyword",
-          "storage",
-          "constant.language",
-          "entity.name.type",
-          "punctuation.definition.variable",
-          "punctuation.definition.parameters"
-        ],
-        "settings": {
-          "fontStyle": "default"
-        }
-      }
-    ]
-  }
-}
-
+  "terminal.integrated.env.linux": {}
 }
 
 =============================================================================================================================
