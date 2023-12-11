@@ -97,7 +97,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "prettier"
   ],
   "overrides": [],
   "parserOptions": {
@@ -110,8 +111,9 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "quotes": ["error", "single"],
     "arrow-body-style": ["error", "always"],
     "eqeqeq": ["error", "always"],
@@ -123,6 +125,16 @@
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "warn"
   }
+}
+
+devDependencies for react eslint end prettier {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.1.1"
 }
 
 # my configs settings.json
