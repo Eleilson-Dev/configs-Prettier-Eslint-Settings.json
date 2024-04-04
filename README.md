@@ -140,61 +140,70 @@ devDependencies for react eslint end prettier {
 # my configs settings.json
 
 {
+  // Editor: Configurações relacionadas à experiência de edição de código
   "editor.fontFamily": "Cascadia code",
   "editor.fontLigatures": true,
-  "workbench.iconTheme": "symbols",
-  "code-runner.clearPreviousOutput": true,
-  "explorer.confirmDelete": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDragAndDrop": false,
-  "git.openRepositoryInParentFolders": "always",
   "editor.minimap.renderCharacters": false,
-  "editor.tabSize": 2,
-  // editor action on save
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll": "explicit"
   },
-  // essa parte configura um file do eslint e prettir
-  "editor.formatOnSave": true,
-  "eslint.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.singleQuote": true,
-  // Explorer
-  "explorer.compactFolders": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.guides.bracketPairs": "active",
+  "editor.codeLensFontSize": 1,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 14,
+  "editor.renderLineHighlight": "gutter",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+
+  // Workbench: Configurações que afetam a interface do usuário do vscode, excluindo o editor de código
+  "workbench.iconTheme": "symbols",
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#c661f5",
     "editorBracketHighlight.foreground2": "#33b8f2",
-
     "editorBracketHighlight.foreground3": "#54e4a6",
     "editorBracketHighlight.foreground4": "#4fb1bc",
     "editorBracketHighlight.foreground5": "#97c26c",
     "editorBracketHighlight.foreground6": "#dfb976",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
-  "editor.codeLensFontSize": 1,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.wordWrap": "on",
-  "editor.fontSize": 14,
-  "gitlens.currentLine.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "window.zoomLevel": 1,
-  //desativando a menuTopBar
-  "window.menuBarVisibility": "hidden",
   "workbench.colorTheme": "Dracula",
-  "symbols.hidesExplorerArrows": false,
   "workbench.startupEditor": "newUntitledFile",
-  "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.minimap.enabled": false,
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
+
+  // Explorer: Configurações relacionadas à visualização e interação com a árvore de arquivos
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  // Git: Configurações específicas para a integração do Git
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.currentLine.enabled": false,
+
+  // Live Server: Configurações para o plugin Live Server
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // Prettier e ESLint: Configurações para formatação de código e linting
+  "eslint.enable": true,
+  "prettier.singleQuote": true,
+
+  // JavaScript: Configurações específicas para desenvolvimento em JavaScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Aparência Geral e UI: Configurações que afetam a aparência geral da interface do usuário
+  "code-runner.clearPreviousOutput": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "hidden",
+  "symbols.hidesExplorerArrows": false,
   "breadcrumbs.enabled": false
 }
 
