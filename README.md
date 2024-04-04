@@ -157,7 +157,7 @@ devDependencies for react eslint end prettier {
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.minimap.enabled": false,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
 
   // Workbench: Configurações que afetam a interface do usuário do vscode, excluindo o editor de código
   "workbench.iconTheme": "symbols",
