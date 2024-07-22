@@ -142,6 +142,11 @@ devDependencies for react eslint end prettier {
 {
   // Editor: Configurações relacionadas à experiência de edição de código
   "editor.fontFamily": "Cascadia code",
+  // config format prisma
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+
   "editor.fontLigatures": true,
   "editor.minimap.renderCharacters": false,
   "editor.codeActionsOnSave": {
@@ -157,10 +162,6 @@ devDependencies for react eslint end prettier {
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
-
-  // Workbench: Configurações que afetam a interface do usuário do vscode, excluindo o editor de código
-  "workbench.iconTheme": "symbols",
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#c661f5",
     "editorBracketHighlight.foreground2": "#33b8f2",
@@ -170,7 +171,6 @@ devDependencies for react eslint end prettier {
     "editorBracketHighlight.foreground6": "#dfb976",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
   },
-  "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.labelFormat": "short",
   "workbench.activityBar.location": "hidden",
@@ -201,11 +201,22 @@ devDependencies for react eslint end prettier {
   // Aparência Geral e UI: Configurações que afetam a aparência geral da interface do usuário
   "code-runner.clearPreviousOutput": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "window.zoomLevel": 1,
   "window.menuBarVisibility": "hidden",
   "symbols.hidesExplorerArrows": false,
-  "breadcrumbs.enabled": false
+  "breadcrumbs.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.lightbulb.enabled": "off",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Dracula Theme",
+
+  // configs pra melhor desempenho
+  "editor.suggestSelection": "first", // Melhora a seleção da sugestão no IntelliSense
+  "files.autoSave": "off", // Desativa o salvamento automático para economizar recursos
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "extensions.ignoreRecommendations": true // Aumenta a memória máxima do TypeScript Language Server
 }
+
 
 =============================================================================================================================
 
